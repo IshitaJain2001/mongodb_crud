@@ -136,7 +136,7 @@ let newUser=  await User.findOneAndUpdate({
         message:"user not found in db"
      })
 
-  const userDeleted=     User.findOneAndDelete({_id:id})
+  const userDeleted=  await   User.findOneAndDelete({_id:id})
 
   return res.status(200).json({
     message:"user deleted successfully !"
