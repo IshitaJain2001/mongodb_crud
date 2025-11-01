@@ -130,13 +130,13 @@ let newUser=  await User.findOneAndUpdate({
         message:"token was incorrect"
     })
 
-    let user =await findById(id)
+    let user =await User.findById(id)
 
      if(!user) return res.status(404).json({
         message:"user not found in db"
      })
 
-  const userDeleted=     findOneAndDelete({_id:id})
+  const userDeleted=     User.findOneAndDelete({_id:id})
 
   return res.status(200).json({
     message:"user deleted successfully !"
