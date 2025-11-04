@@ -1,37 +1,24 @@
-import { model, Schema } from "mongoose";
-import validator from "validator"
-const userSchema= new  Schema({
-firstName:{
-type: String,
-required: true
-},
-lastName:{
-type:String
+import { Schema ,model} from "mongoose";
 
-},
-userName:{
-type: String,
-required:true,
-unique: true,
-validate:{
-    validator:validator.isEmail, 
-    message:"please enter a valid email "
-}
-},
-password:{
-type:String,
-required: true,
-minlength:8,
-validate:{
-    validator: validator.isStrongPassword,
-    message:"please enter a Strong Password"
-}
-}
- })
+ const userSchema = new   Schema({
+    name:{
+        type: String
+    },
+    age:{
+        type:Number
+    },
+    state:{
+        type:String
+    }
+   })
 
- //schema- model
- 
- //constructor fn -
+    const User= new model("Users", userSchema)
+    export default User;
 
- const User=new model("Users", userSchema)
- export default User;
+   //string
+
+    //model 
+
+    // require  - common js 
+    // import - modular js
+

@@ -1,0 +1,17 @@
+ 1. why node (fs)? **
+ 2. node architecture ( flow )
+3. express ?? - (boiler plate , mongoose )
+4.  http methods ****
+5. bcrypt -> password hashing?? - cyber securities (compare , hash)****
+6. jwt - protected routes (login ) token (browser ), cookies in  broswer ,
+ token- (3 headers , payload , optional ) - user id + secret key (token meri website ka h ya nhi) + (expiry date :7d)
+ 7. middlewares = express.json( json-parse ), cors , cookieparser  , custom middlewares (optional - auth middleware )
+ 8. routers, controller , app.use
+ 9. mongodb - mongoose , sql , no sql 
+ 10. collections , documents
+ 11. schema, model
+ 12. queries (findOne, find , fineById , FindOneAndUpdate ,  FindOneAndDelete,
+ findOneAndUpdate, findOneAndDelete
+  )
+  13. aggregation pipeline (operators -> match , group ,gt, limit, project, gte  )
+  14. mongodb relations  
